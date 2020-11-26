@@ -24,4 +24,16 @@ public class SimpleCalculatorTest {
         SimpleCalculator calc = new SimpleCalculator();
         assertEquals(calc.div(8, 2), 4);
     }
+    
+    @Test
+    public void testSqrt() {
+    	SimpleCalculator calc = new SimpleCalculator();
+    	assertEquals(calc.sqrt(4), 2);
+    }
+    
+    @Test
+    public void testExponent() {
+    	SimpleCalculator calc = new SimpleCalculator();
+    	assertEquals(calc.exp(3, 2), 9);
+    }
 }
